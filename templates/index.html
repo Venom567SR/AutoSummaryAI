@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoSummaryAI - Text Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="main-title">AutoSummaryAI</h1>
+            <h2 class="sub-title">Your Go-To AI Text Summarizer</h2>
+        </header>
+
+        <main class="main-content">
+            <div class="input-section">
+                <textarea 
+                    id="input-text" 
+                    placeholder="Paste your text here to summarize..."
+                ></textarea>
+                <div class="button-group">
+                    <button id="summarize-btn" class="primary-btn">Summarize</button>
+                    <button id="clear-btn" class="secondary-btn">Clear</button>
+                </div>
+            </div>
+
+            <div class="output-section">
+                <h3>Summary</h3>
+                <div id="summary-output" class="output-box">
+                    Your summary will appear here...
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Powered by AutoSummaryAI</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', path='/js/main.js') }}"></script>
+</body>
+</html>
